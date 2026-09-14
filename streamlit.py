@@ -157,6 +157,7 @@ if hasattr(model, 'feature_names_in_'):
 pred = model.predict(input_data)[0]
 proba = model.predict_proba(input_data)[0][1]
 
+st.markdown('---')
 if pred == 1:
   st.success(f'Previsão: Sabe ler e escrever (Probabilidade: {proba:.2%})')
 else:
