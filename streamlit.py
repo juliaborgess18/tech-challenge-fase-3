@@ -76,7 +76,7 @@ with col3:
     #   'Parente do(a) empregado(a) doméstico(a)': 19,
   }
   sel_tipo_pessoa = st.selectbox(
-      'Condição no Domicílio', list(opcoes_tipo_pessoa.keys())
+      'Condição da criança no lar', list(opcoes_tipo_pessoa.keys())
   )
 
 with col4:
@@ -92,11 +92,11 @@ with col4:
       'Mais de 20 SM': 8,
   }
   sel_renda = st.selectbox(
-      'Faixa de rendimento bruto do domicílio onde a criança reside', list(opcoes_renda.keys())
+      'Faixa de rendimento do lar onde a criança reside', list(opcoes_renda.keys())
   )
 
   numero_pessoas = st.number_input(
-      'Número de Pessoas no domicílio onde a criança reside', min_value=1, max_value=20, value=4
+      'Número de Pessoas no do lar onde a criança reside', min_value=1, max_value=20, value=4
   )
 
 st.markdown('---')
