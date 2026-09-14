@@ -81,7 +81,7 @@ with col3:
 
 with col4:
   opcoes_renda = {
-      'Sem rendimento': 0,
+    #   'Sem rendimento': 0,
       'Até 0,5 SM': 1,
       '0,5 a 1 SM': 2,
       '1 a 2 SM': 3,
