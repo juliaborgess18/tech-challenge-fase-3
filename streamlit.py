@@ -55,25 +55,25 @@ with col3:
   sel_domicilio = st.selectbox('Situação do Domicílio', list(opcoes_domicilio.keys()))
 
   opcoes_tipo_pessoa = {
-      'Pessoa responsável pelo domicílio': 1,
-      'Cônjuge ou companheiro(a) de sexo diferente': 2,
-      'Cônjuge ou companheiro(a) do mesmo sexo': 3,
+    #   'Pessoa responsável pelo domicílio': 1,
+    #   'Cônjuge ou companheiro(a) de sexo diferente': 2,
+    #   'Cônjuge ou companheiro(a) do mesmo sexo': 3,
       'Filho(a) do responsável e do cônjuge': 4,
       'Filho(a) somente do responsável': 5,
       'Enteado(a)': 6,
-      'Genro ou nora': 7,
-      'Pai, mãe, padrasto ou madrasta': 8,
-      'Sogro(a)': 9,
+    #   'Genro ou nora': 7,
+    #   'Pai, mãe, padrasto ou madrasta': 8,
+    #   'Sogro(a)': 9,
       'Neto(a)': 10,
       'Bisneto(a)': 11,
       'Irmão ou irmã': 12,
-      'Avô ou avó': 13,
+    #   'Avô ou avó': 13,
       'Outro parente': 14,
-      'Agregado(a) - Não parente que não compartilha despesas': 15,
-      'Convivente - Não parente que compartilha despesas': 16,
-      'Pensionista': 17,
-      'Empregado(a) doméstico(a)': 18,
-      'Parente do(a) empregado(a) doméstico(a)': 19,
+    #   'Agregado(a) - Não parente que não compartilha despesas': 15,
+    #   'Convivente - Não parente que compartilha despesas': 16,
+    #   'Pensionista': 17,
+    #   'Empregado(a) doméstico(a)': 18,
+    #   'Parente do(a) empregado(a) doméstico(a)': 19,
   }
   sel_tipo_pessoa = st.selectbox(
       'Condição no Domicílio', list(opcoes_tipo_pessoa.keys())
@@ -92,11 +92,11 @@ with col4:
       'Mais de 20 SM': 8,
   }
   sel_renda = st.selectbox(
-      'Faixa de Rendimento Bruto do Domicílio', list(opcoes_renda.keys())
+      'Faixa de rendimento bruto do domicílio onde a criança reside', list(opcoes_renda.keys())
   )
 
   numero_pessoas = st.number_input(
-      'Número de Pessoas no Domicílio', min_value=1, max_value=20, value=4
+      'Número de Pessoas no domicílio onde a criança reside', min_value=1, max_value=20, value=4
   )
 
 st.markdown('---')
