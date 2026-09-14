@@ -85,8 +85,6 @@ with col4:
         'Número de Pessoas no do lar onde a criança reside', min_value=1, max_value=20, value=4
     )
 
-st.markdown('---')
-
 sexo = opcoes_sexo[sel_sexo]
 cor_raca = opcoes_cor[sel_cor]
 situacao_domicilio = opcoes_domicilio[sel_domicilio]
@@ -159,7 +157,6 @@ if hasattr(model, 'feature_names_in_'):
 pred = model.predict(input_data)[0]
 proba = model.predict_proba(input_data)[0][1]
 
-st.markdown('---')
 if pred == 1:
   st.success(f'Previsão: Sabe ler e escrever (Probabilidade: {proba:.2%})')
 else:
