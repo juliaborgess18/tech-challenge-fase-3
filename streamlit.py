@@ -68,7 +68,7 @@ with col3:
       'Bisneto(a)': 11,
       'Irmão ou irmã': 12,
     #   'Avô ou avó': 13,
-      'Outro parente': 14,
+    #   'Outro parente': 14,
     #   'Agregado(a) - Não parente que não compartilha despesas': 15,
     #   'Convivente - Não parente que compartilha despesas': 16,
     #   'Pensionista': 17,
