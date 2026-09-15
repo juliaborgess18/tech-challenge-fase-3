@@ -82,7 +82,7 @@ with col4:
     )
 
     numero_pessoas = st.number_input(
-        'Número de Pessoas no do lar onde a criança reside', min_value=1, max_value=20, value=4
+        'Número de Pessoas no lar onde a criança reside', min_value=1, max_value=20, value=4
     )
 
 sexo = opcoes_sexo[sel_sexo]
